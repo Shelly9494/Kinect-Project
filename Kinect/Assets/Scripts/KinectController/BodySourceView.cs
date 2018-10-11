@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
 using Kinect = Windows.Kinect;
 using Joint = Windows.Kinect.Joint;
 
