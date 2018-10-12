@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Magnet
   - Coin
+  - Bubble
+  - Hand
+  - Plane
   layers:
   - Default
   - TransparentFX
