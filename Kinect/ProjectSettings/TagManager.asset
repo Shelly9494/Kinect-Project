@@ -9,6 +9,7 @@ TagManager:
   - Bubble
   - Hand
   - Plane
+  - Focus
   layers:
   - Default
   - TransparentFX

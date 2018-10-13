@@ -70,6 +70,8 @@
     <Compile Include="Assets\Scripts\BubbleController\GeometrySpawner.cs" />
     <Compile Include="Assets\Scripts\BubbleController\PlaneController.cs" />
     <Compile Include="Assets\Scripts\BubbleController\Spawner.cs" />
+    <Compile Include="Assets\Scripts\HandController\CameraAttracter.cs" />
+    <Compile Include="Assets\Scripts\HandController\DistanceAttracter.cs" />
     <Compile Include="Assets\Scripts\HandController\Hands.cs" />
     <Compile Include="Assets\Scripts\KinectController\BodySourceManager.cs" />
     <Compile Include="Assets\Scripts\KinectController\BodySourceView.cs" />

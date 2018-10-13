@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MainScenes/ARScene.unity
+- path: Assets/Scenes/MainScenes/TextFollow.unity
   isLoaded: 1
   isActive: 1
