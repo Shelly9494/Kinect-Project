@@ -5,7 +5,7 @@ using UnityEngine;
 public class Geometry : MonoBehaviour {
 
     float fallSpeed = 2;
-    float rotateSpeed = 20;
+    float rotateSpeed = 30;
 
     Rigidbody rb;
 
@@ -18,6 +18,8 @@ public class Geometry : MonoBehaviour {
     float explosionRadius = 4f;
     float explosionForce = 30f;
     float explosionUpward = 0.4f;
+    GameObject[] geoObjects;
+    int geoLength;
 
 
     void Start()
@@ -31,9 +33,11 @@ public class Geometry : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-      
-        
-	}
+
+        CountObjects();
+
+
+    }
 
     void FixedUpdate()
     {
@@ -46,6 +50,16 @@ public class Geometry : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Plane")){
             Explode();
+        }
+    }
+
+    void CountObjects()
+    {
+        geoObjects = GameObject.FindGameObjectsWithTag("cube");
+        geoLength = GameObject.FindGameObjectsWithTag("cube").Length;
+        if (geoLength > 15)
+        {
+            Destroy(geoObjects[geoLength-(geoLength-2)]);
         }
     }
 

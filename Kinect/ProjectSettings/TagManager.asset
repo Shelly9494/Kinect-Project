@@ -10,6 +10,7 @@ TagManager:
   - Hand
   - Plane
   - Focus
+  - cube
   layers:
   - Default
   - TransparentFX
