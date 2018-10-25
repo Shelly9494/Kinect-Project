@@ -58,6 +58,7 @@
      <Compile Include="Assets\02_Magnet_Tut\Scripts\MagnetActions_CS.cs" />
      <Compile Include="Assets\02_Magnet_Tut\Scripts\MagnetChangeDir_CS.cs" />
      <Compile Include="Assets\Scripts\BubbleController\Bubble.cs" />
+     <Compile Include="Assets\Scripts\BubbleController\FloatLetter.cs" />
      <Compile Include="Assets\Scripts\BubbleController\Geometry.cs" />
      <Compile Include="Assets\Scripts\BubbleController\GeometrySpawner.cs" />
      <Compile Include="Assets\Scripts\BubbleController\PlaneController.cs" />
@@ -76,6 +77,7 @@
      <Compile Include="Assets\Scripts\KinectController\InfraredSourceManager.cs" />
      <Compile Include="Assets\Scripts\KinectController\InfraredSourceView.cs" />
      <Compile Include="Assets\Scripts\KinectController\MultiSourceManager.cs" />
+     <Compile Include="Assets\Scripts\LineController\DrawLines.cs" />
      <Compile Include="Assets\Scripts\Magnet\Coin.cs" />
      <Compile Include="Assets\Scripts\Magnet\CoinModified.cs" />
      <Compile Include="Assets\Scripts\Magnet\GameController.cs" />

@@ -11,6 +11,8 @@ TagManager:
   - Plane
   - Focus
   - cube
+  - Shape
+  - Brush
   layers:
   - Default
   - TransparentFX
