@@ -6,7 +6,7 @@ public class DrawLines : MonoBehaviour {
     public GameObject brush;
 
     private Vector3 lastPoint;
-
+    private GameObject newShapes;
 
     // Use this for initialization
     void Start ()
@@ -19,8 +19,7 @@ public class DrawLines : MonoBehaviour {
     {
         if (targetObject.activeInHierarchy == true && targetObject.transform.position != lastPoint)
         {
-           Instantiate(brush, targetObject.transform.position, Quaternion.identity);
-            
+            Instantiate(brush, targetObject.transform.position, Quaternion.identity);
         }
 
         if (targetObject.activeInHierarchy == false)
@@ -36,16 +35,16 @@ public class DrawLines : MonoBehaviour {
     {
         GameObject[] shapes = GameObject.FindGameObjectsWithTag("Brush");
 
-        foreach (GameObject item in shapes)
+        foreach(GameObject item in shapes)
         {
-
             if (!item.GetComponent<FloatLetter>())
             {
                 item.AddComponent<FloatLetter>();
             }
 
-            Destroy(item, 20);
+            Destroy(item, 30);
         }
         
+
     }
 }

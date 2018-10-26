@@ -77,7 +77,11 @@
      <Compile Include="Assets\Scripts\KinectController\InfraredSourceManager.cs" />
      <Compile Include="Assets\Scripts\KinectController\InfraredSourceView.cs" />
      <Compile Include="Assets\Scripts\KinectController\MultiSourceManager.cs" />
+     <Compile Include="Assets\Scripts\LineController\CreateLines.cs" />
      <Compile Include="Assets\Scripts\LineController\DrawLines.cs" />
+     <Compile Include="Assets\Scripts\LineController\GeneralDisappear.cs" />
+     <Compile Include="Assets\Scripts\LineController\LineGame.cs" />
+     <Compile Include="Assets\Scripts\LineController\MoveLines.cs" />
      <Compile Include="Assets\Scripts\Magnet\Coin.cs" />
      <Compile Include="Assets\Scripts\Magnet\CoinModified.cs" />
      <Compile Include="Assets\Scripts\Magnet\GameController.cs" />
