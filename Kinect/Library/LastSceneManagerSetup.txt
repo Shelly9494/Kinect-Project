@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/MainScenes/ARScene.unity
+=======
+- path: Assets/Scenes/Shapes.unity
+>>>>>>> 34a692d6450c505521f9678f05f35389421bb0ea
   isLoaded: 1
   isActive: 1
