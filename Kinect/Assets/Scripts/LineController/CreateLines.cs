@@ -7,7 +7,7 @@ public class CreateLines : MonoBehaviour {
 
     public GameObject linePrefab;
     private Material lineMaterial;
-    private float tempTime = 0;
+    
 
     LineGame activeLine;
     
@@ -18,7 +18,7 @@ public class CreateLines : MonoBehaviour {
         {
             GameObject lineGo = Instantiate(linePrefab);
             activeLine = lineGo.GetComponent<LineGame>();
-            tempTime = 0;
+           
         }
 
         if (Input.GetMouseButtonUp(0))
