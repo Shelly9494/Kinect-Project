@@ -6,7 +6,7 @@ using System.Linq;
 public class LineGame : MonoBehaviour {
 
     public LineRenderer lineRenderer;
-   
+    public EdgeCollider2D edgeCol;
 
     List <Vector2> points;
     
@@ -34,6 +34,9 @@ public class LineGame : MonoBehaviour {
         lineRenderer.positionCount = points.Count;
         lineRenderer.SetPosition(points.Count - 1, point);
 
-        
+        if(points.Count > 1)
+        {
+            edgeCol.points = points.ToArray();
+        }
     }
 }

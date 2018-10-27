@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 120125051108628540}
+  edgeCol: {fileID: 68090871225228430}
 --- !u!120 &120125051108628540
 LineRenderer:
   m_ObjectHideFlags: 1
