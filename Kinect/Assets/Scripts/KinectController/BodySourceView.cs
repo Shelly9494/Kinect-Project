@@ -7,6 +7,7 @@ using Joint = Windows.Kinect.Joint;
 public class BodySourceView : MonoBehaviour 
 {
     public Material BoneMaterial;
+    public ParticleSystem ParticalMaterial;
     public GameObject BodySourceManager;
     
     private Dictionary<ulong, GameObject> _Bodies = new Dictionary<ulong, GameObject>();
@@ -114,12 +115,16 @@ public class BodySourceView : MonoBehaviour
         
         for (Kinect.JointType jt = Kinect.JointType.SpineBase; jt <= Kinect.JointType.ThumbRight; jt++)
         {
-            GameObject jointObj = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            
+            GameObject jointObj = new GameObject();
+
             LineRenderer lr = jointObj.AddComponent<LineRenderer>();
+           
             lr.SetVertexCount(2);
             lr.material = BoneMaterial;
             lr.SetWidth(0.05f, 0.05f);
+            
+
+            
             
             jointObj.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
             jointObj.name = jt.ToString();
@@ -145,7 +150,8 @@ public class BodySourceView : MonoBehaviour
             jointObj.localPosition = GetVector3FromJoint(sourceJoint);
             
             LineRenderer lr = jointObj.GetComponent<LineRenderer>();
-            if(targetJoint.HasValue)
+            ParticleSystem pS = jointObj.GetComponent<ParticleSystem>();
+            if (targetJoint.HasValue)
             {
                 lr.SetPosition(0, jointObj.localPosition);
                 lr.SetPosition(1, GetVector3FromJoint(targetJoint.Value));

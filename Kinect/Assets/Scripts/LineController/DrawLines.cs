@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+
 public class DrawLines : MonoBehaviour {
 
     public GameObject targetObject;
@@ -17,6 +18,8 @@ public class DrawLines : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(targetObject.transform.position);
+
         if (targetObject.activeInHierarchy == true && targetObject.transform.position != lastPoint)
         {
             Instantiate(brush, targetObject.transform.position, Quaternion.identity);
