@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 33098327169104016}
   - component: {fileID: 23956306239389384}
   - component: {fileID: 64971700186986944}
-  - component: {fileID: 114707582563277242}
   m_Layer: 0
   m_Name: SolidCircle
   m_TagString: Shape
@@ -99,14 +98,3 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114707582563277242
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1122808654276312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ab93f4110bb17447818f9fd36987402, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
