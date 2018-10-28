@@ -7,21 +7,21 @@ public class CreateLines : MonoBehaviour {
 
     public GameObject linePrefab;
     private Material lineMaterial;
-    
+    public GameObject hands;
 
     LineGame activeLine;
     
 
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButtonDown(0))
+        if (hands.activeInHierarchy)
         {
             GameObject lineGo = Instantiate(linePrefab);
             activeLine = lineGo.GetComponent<LineGame>();
             
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (!hands.activeInHierarchy)
         {
             activeLine = null;
             StartCoroutine(WaitForDoubleCheck());

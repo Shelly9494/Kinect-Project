@@ -799,6 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linePrefab: {fileID: 1476110523449928, guid: bb2cc1f5614f60b49a01cdbf532d12c9, type: 2}
+  hands: {fileID: 1539862744779906, guid: 0c98b9399a8d41b409aef4115e5e8257, type: 2}
 --- !u!4 &1535073690
 Transform:
   m_ObjectHideFlags: 0
