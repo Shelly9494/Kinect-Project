@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 216405427}
   - component: {fileID: 216405426}
   - component: {fileID: 216405425}
+  - component: {fileID: 216405430}
   m_Layer: 0
   m_Name: aCylinder
   m_TagString: Untagged
@@ -139,7 +140,7 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 216405424}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c23eda5ea65193f419487b2a559016c5, type: 2}
   m_CullingMode: 0
@@ -218,6 +219,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &216405430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 216405424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d508f428c6bd04884b000a874cb8fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animDur: 1
+  posRange: 2
+  noZMove: 1
+  rotRange: 1
+  lockRotToZ: 0
 --- !u!1 &744785732
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +247,7 @@ GameObject:
   - component: {fileID: 744785735}
   - component: {fileID: 744785734}
   - component: {fileID: 744785733}
+  - component: {fileID: 744785738}
   m_Layer: 0
   m_Name: dCylinder
   m_TagString: Untagged
@@ -244,7 +262,7 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 744785732}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c23eda5ea65193f419487b2a559016c5, type: 2}
   m_CullingMode: 0
@@ -323,6 +341,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &744785738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 744785732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03145fb1ab3342f429e0c7905dbc178e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &784751968
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +711,7 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1958426695}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c23eda5ea65193f419487b2a559016c5, type: 2}
   m_CullingMode: 0
@@ -772,6 +801,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aa77055d66024645b523c5a6840ae83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  distance: {x: 1, y: 1, z: 1}
+  speed: 2
+  startPos: {x: 1, y: 1, z: 1}
+  toPos: {x: 2, y: 2, z: 2}
 --- !u!1 &2045644412
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,7 +855,7 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2045644412}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c23eda5ea65193f419487b2a559016c5, type: 2}
   m_CullingMode: 0

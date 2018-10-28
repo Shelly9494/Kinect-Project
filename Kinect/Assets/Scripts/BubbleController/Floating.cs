@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Floating : MonoBehaviour
 {
-
-    Transform objTransform;
-
     public float waterLevel = 0.01f;
     public float floatThreshold = 2.0f;
     public float waterDensity = 0.125f;
@@ -14,17 +11,14 @@ public class Floating : MonoBehaviour
 
     float forceFactor;
     Vector3 floatForce;
-    private float x;
-    private float y;
-
-    private float countRotation;
+    Quaternion defaultRotation;
+    private int countRotation;
+    private int rotateSpeed;
 
     void Start()
     {
-        countRotation = 0;
-        x = 0;
-        y = 0;
-        InvokeRepeating("Rotation", 2.0f, 3.0f);
+        defaultRotation = transform.localRotation;
+        InvokeRepeating("Count", 3f, 5f);
     }
 
     // Update is called once per frame
@@ -39,30 +33,25 @@ public class Floating : MonoBehaviour
             floatForce += new Vector3(0.0f, -downForce, 0.0f);
             GetComponent<Rigidbody>().AddForceAtPosition(floatForce, transform.position);
         }
-
-        StartCoroutine(WaitForRotate());
        
     }
 
-    IEnumerator WaitForRotate()
+    void Update()
     {
-        yield return new WaitForSeconds(10);
-        
-        Debug.Log(countRotation);
+        if (countRotation % 2 == 0)
+        {
+            transform.Rotate(Vector3.down * rotateSpeed , Space.World);
+        }
+
+        if (countRotation % 2 == 1)
+        {
+            transform.Rotate(Vector3.right * rotateSpeed, Space.World);
+        }
     }
 
-    void Rotation()
+    void Count()
     {
-        countRotation++;
-        if (countRotation % 2 ==0)
-        {
-            x = x + 90;
-            objTransform.localEulerAngles = new Vector3(x , y, 0);
-        }
-        if(countRotation % 2 == 1)
-        {
-            y = y + 90;
-            objTransform.localEulerAngles = new Vector3(x, y, 0);
-        }
+        countRotation = Random.Range(0, 2);
+        Debug.Log(countRotation);
     }
 }

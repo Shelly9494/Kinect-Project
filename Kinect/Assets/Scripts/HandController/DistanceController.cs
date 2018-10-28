@@ -15,7 +15,7 @@ public class DistanceController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
         float speed = 2 * Time.deltaTime;
 

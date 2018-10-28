@@ -3,25 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CreateLines : MonoBehaviour {
+public class CreateLines : MonoBehaviour { 
 
     public GameObject linePrefab;
     private Material lineMaterial;
-    
+    public GameObject hands;
+  
 
-    LineGame activeLine;
-    
+    LineGame activeLine; 
 
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButtonDown(0))
+
+        Vector2 handPos = new Vector2(GameObject.FindGameObjectWithTag("Hand").transform.position.x, GameObject.FindGameObjectWithTag("Hand").transform.position.y);
+
+        if (GameObject.FindGameObjectWithTag("Hand") != null) 
         {
             GameObject lineGo = Instantiate(linePrefab);
             activeLine = lineGo.GetComponent<LineGame>();
             
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (GameObject.FindGameObjectsWithTag("Hand") == null)
         {
             activeLine = null;
             StartCoroutine(WaitForDoubleCheck());
@@ -31,7 +34,8 @@ public class CreateLines : MonoBehaviour {
 
         if (activeLine != null)
         {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //Vector3 screenPos = Camera.main.WorldToScreenPoint(target.position);
+            Vector2 mousePos = Camera.main.WorldToScreenPoint(handPos);
             activeLine.UpdateLine(mousePos);
             Debug.Log("Draw Line");
         }

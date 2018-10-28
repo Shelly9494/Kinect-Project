@@ -9,6 +9,12 @@ public class BodySourceView2 : MonoBehaviour {
     public BodySourceManager mBodySourceManager;
     public GameObject mJointObject;
 
+    //private GameObject targetObject;
+    public GameObject brush;
+
+    private Vector3 lastPoint;
+    private GameObject newShapes;
+
     private Dictionary<ulong, GameObject> mBodies = new Dictionary<ulong, GameObject>();
 
     private List<JointType> _joints = new List<JointType>
@@ -16,8 +22,13 @@ public class BodySourceView2 : MonoBehaviour {
         JointType.HandLeft,
         JointType.HandRight,
     };
-	// Update is called once per frame
-	void Update () {
+
+    private void Start()
+    {
+        
+    }
+    // Update is called once per frame
+    void Update () {
         #region Get Kinect data
         Body[] data = mBodySourceManager.GetData();
         if (data == null)
@@ -66,6 +77,25 @@ public class BodySourceView2 : MonoBehaviour {
         }
         #endregion
 
+        //targetObjectPosition();
+}
+
+    public void targetObjectPosition(Transform changePoint) {
+
+
+      if (mJointObject.activeInHierarchy == true && mJointObject.transform.position != lastPoint)
+        {
+            Instantiate(brush, mJointObject.transform.position, Quaternion.identity);
+}
+
+        if (mJointObject.activeInHierarchy == false)
+        {
+            Invoke("StorePath", 1);
+
+        }
+
+        lastPoint = mJointObject.transform.position;
+
     }
 
     private GameObject CreateBodyObject(ulong id)
@@ -83,7 +113,7 @@ public class BodySourceView2 : MonoBehaviour {
         return body;
     }
 
-    private void UpdateBodyObject(Body body, GameObject bodyObject)
+    public void UpdateBodyObject(Body body, GameObject bodyObject)
     {
         foreach (JointType _joint in _joints)
         {
@@ -93,11 +123,39 @@ public class BodySourceView2 : MonoBehaviour {
 
             Transform jointObject = bodyObject.transform.Find(_joint.ToString());
             jointObject.position = targetPosition;
+            Debug.Log(targetPosition);
+
+            //targetObject.transform.position = targetPosition;
+
+            //targetObjectPosition(jointObject.position);
+
+            Instantiate(brush, jointObject.position, Quaternion.identity);
+
+            Invoke("StorePath", 5);
         }
+
+        
     }
 
     private Vector3 GetVector3FromJoint(Joint joint)
     {
         return new Vector3(joint.Position.X * 10, joint.Position.Y * 10, joint.Position.Z * 10);
+    }
+
+    void StorePath()
+    {
+        GameObject[] shapes = GameObject.FindGameObjectsWithTag("Brush");
+
+        foreach (GameObject item in shapes)
+        {
+            if (!item.GetComponent<FloatLetter>())
+            {
+                item.AddComponent<FloatLetter>();
+            }
+
+            Destroy(item, 10);
+        }
+
+
     }
 }

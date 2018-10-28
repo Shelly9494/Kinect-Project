@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Shapes.unity
+=======
+- path: Assets/Scenes/MainScenes/LineScene.unity
+>>>>>>> f8bd615c1620ee362aadfeeada806b3993077115
   isLoaded: 1
   isActive: 1
