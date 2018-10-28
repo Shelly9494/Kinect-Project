@@ -1,15 +1,12 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
+﻿
 Shader "Custom/UnderWaterTwo" {
 	Properties{
 		_MainTex("Base (RGB)", 2D) = "white" {}
-		_R1("灰彩渐变", Range(0.0, 1.1)) = 0
-		_Texure("光影纹理", 2D) = "white" {}
-		_R("浪纹亮度", Range(.0, 4.0)) = 1.
-		_R0("浪纹密度", float) = 1.
-		_Color("光影颜色", Color) = (1.0, 1.0, 1.0, 1.0)
+		_R1("Grey Color Range", Range(0.0, 1.1)) = 0
+		_Texure("Lighting Maps", 2D) = "white" {}
+		_R("Wave Brightness", Range(.0, 4.0)) = 1.
+		_R0("Wave Density", float) = 1.
+		_Color("Lighting Color", Color) = (1.0, 1.0, 1.0, 1.0)
 	}
 		SubShader{
 			Tags { "RenderType" = "Opaque" }//"Queue"="Overlay"
@@ -18,8 +15,7 @@ Shader "Custom/UnderWaterTwo" {
 			Pass{
 				ZWrite On Blend Off AlphaTest Off Lighting Off
 				CGPROGRAM
-			// Upgrade NOTE: excluded shader from qq834144373, twitter@834144373Zhu because you should call me here.
-				//#pragma exclude_renderers d3d11 xbox360 gles flash all the terget!!!!
+			
 				#pragma vertex vert 
 				#pragma fragment frag 
 				#include "UnityCG.cginc"
@@ -32,7 +28,7 @@ Shader "Custom/UnderWaterTwo" {
 				fixed4 _Color;
 				half4 _MainTex_ST;
 				half4 _Texure_ST;
-				//float4x4 _Object2Light;
+				
 
 
 				struct vertIN {
