@@ -12,7 +12,8 @@ public class SwitchObjects : MonoBehaviour {
 	void Start () {
 
        
-        currentShape = Random.Range(0, findShapes.Length - 1);
+        currentShape = Random.Range(0, findShapes.Length);
+        
         findShapes[currentShape].SetActive(true);
 	}
 	

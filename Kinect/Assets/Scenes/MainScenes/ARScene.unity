@@ -157,6 +157,7 @@ MonoBehaviour:
   mBodySourceManager: {fileID: 1698423885}
   mJointObject: {fileID: 1539862744779906, guid: 0c98b9399a8d41b409aef4115e5e8257,
     type: 2}
+  brush: {fileID: 1875490858311374, guid: 24ccb3281bfa44a4989babfdf725502d, type: 2}
 --- !u!1001 &168939762
 Prefab:
   m_ObjectHideFlags: 0
@@ -990,7 +991,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1022827880
 MonoBehaviour:
   m_ObjectHideFlags: 0

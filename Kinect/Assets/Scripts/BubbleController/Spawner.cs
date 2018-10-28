@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour {
 
         while (true)
         {
-            randBubble = Random.Range(0, 4);
+            randBubble = Random.Range(0, storeBubbles.Length);
 
             Vector3 bubblePosition = new Vector3(Random.Range(-bubbleValue.x, bubbleValue.x), -1, 0);
             Instantiate(storeBubbles[randBubble], bubblePosition + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
