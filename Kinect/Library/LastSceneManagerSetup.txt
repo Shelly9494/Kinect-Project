@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/MainScenes/DefaultScreen.unity
+=======
+- path: Assets/Scenes/MainScenes/ARScene.unity
+>>>>>>> 34c404638f87a243c2677f6f7e39972c9fb38c5b
   isLoaded: 1
   isActive: 1
