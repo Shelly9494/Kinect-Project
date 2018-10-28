@@ -21,8 +21,9 @@ GameObject:
   - component: {fileID: 4152239372619510}
   - component: {fileID: 212042883793604768}
   - component: {fileID: 95893078295165692}
+  - component: {fileID: 114606697032288328}
   m_Layer: 0
-  m_Name: Crane
+  m_Name: Crane 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,6 +60,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114606697032288328
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227943136057336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7e776a2138135479f2fffd08dea6b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212042883793604768
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -95,7 +107,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 678be66384e74e547b0a001f1b93d21c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.12829298, g: 0.8773585, b: 0.73117846, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

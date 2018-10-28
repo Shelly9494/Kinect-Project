@@ -12,8 +12,14 @@ public class SwitchObjects : MonoBehaviour {
     // Use this for initialization
 	void Start () {
 
+<<<<<<< HEAD
         clickAudio = GetComponent<AudioSource>();
         currentShape = Random.Range(0, findShapes.Length - 1);
+=======
+       
+        currentShape = Random.Range(0, findShapes.Length);
+        
+>>>>>>> 840fb3f020a90bd39db09fbc4b663198b4ed0a4e
         findShapes[currentShape].SetActive(true);
 	}
 	

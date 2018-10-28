@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/MainScenes/DefaultScreenTwo.unity
+=======
+- path: Assets/Scenes/MainScenes/OrigamiScene.unity
+>>>>>>> 840fb3f020a90bd39db09fbc4b663198b4ed0a4e
   isLoaded: 1
   isActive: 1

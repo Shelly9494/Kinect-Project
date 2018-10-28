@@ -17,6 +17,7 @@ TagManager:
   - SolidShape
   - StGradient
   - StrokeShape
+  - CraneShape
   layers:
   - Default
   - TransparentFX
