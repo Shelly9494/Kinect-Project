@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/MainScenes/LineScene.unity
+=======
+- path: Assets/Scenes/Adrian/Rain.unity
+>>>>>>> e2484ae6ef9e27b6c65769d0a6c81d8db41866d1
   isLoaded: 1
   isActive: 1
