@@ -65,8 +65,6 @@
     <Compile Include="Assets\02_Magnet_Tut\Scripts\GameController_CS.cs" />
     <Compile Include="Assets\02_Magnet_Tut\Scripts\MagnetActions_CS.cs" />
     <Compile Include="Assets\02_Magnet_Tut\Scripts\MagnetChangeDir_CS.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\animationController.cs" />
     <Compile Include="Assets\RainMaker\Demo\DemoScript.cs" />
     <Compile Include="Assets\RainMaker\Demo\DemoScript2D.cs" />
     <Compile Include="Assets\RainMaker\Demo\DemoScriptStartRainOnSpaceBar.cs" />
@@ -74,8 +72,6 @@
     <Compile Include="Assets\RainMaker\Prefab\RainCollision.cs" />
     <Compile Include="Assets\RainMaker\Prefab\RainScript.cs" />
     <Compile Include="Assets\RainMaker\Prefab\RainScript2D.cs" />
-=======
->>>>>>> f8bd615c1620ee362aadfeeada806b3993077115
     <Compile Include="Assets\Scripts\BubbleController\Bubble.cs" />
     <Compile Include="Assets\Scripts\BubbleController\Floating.cs" />
     <Compile Include="Assets\Scripts\BubbleController\FloatLetter.cs" />
@@ -85,12 +81,9 @@
     <Compile Include="Assets\Scripts\BubbleController\Rotating.cs" />
     <Compile Include="Assets\Scripts\BubbleController\Spawner.cs" />
     <Compile Include="Assets\Scripts\BubbleController\SwitchObjects.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Assets\Scripts\ForDefaultScreen\animationController.cs" />
     <Compile Include="Assets\Scripts\ForDefaultScreen\animationControllerThree.cs" />
     <Compile Include="Assets\Scripts\ForDefaultScreen\animationControllerTwo.cs" />
->>>>>>> f8bd615c1620ee362aadfeeada806b3993077115
     <Compile Include="Assets\Scripts\ForParticleSystem\cannonBall.cs" />
     <Compile Include="Assets\Scripts\HandController\CameraAttracter.cs" />
     <Compile Include="Assets\Scripts\HandController\DistanceController.cs" />
@@ -119,11 +112,8 @@
     <Compile Include="Assets\Scripts\Magnet\MagnetChangeDirection.cs" />
     <None Include="Assets\UnderWaterTest\WaterShaderTwo.shader" />
     <None Include="Assets\UnderWaterTest\WaterShader.shader" />
-<<<<<<< HEAD
     <None Include="Assets\RainMaker\Prefab\RainShader.shader" />
     <None Include="Assets\RainMaker\Readme.txt" />
-=======
->>>>>>> f8bd615c1620ee362aadfeeada806b3993077115
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/aidzu/Documents/GitHub/Kinect-Project/Kinect/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -368,11 +358,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Boo.Lang">
-<<<<<<< HEAD
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
-=======
-      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
->>>>>>> f8bd615c1620ee362aadfeeada806b3993077115
     </Reference>
   </ItemGroup>
   <ItemGroup>
