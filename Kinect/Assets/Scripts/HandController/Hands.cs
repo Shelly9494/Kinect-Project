@@ -5,6 +5,8 @@ using UnityEngine;
 public class Hands : MonoBehaviour {
 
     public Transform mHandMesh;
+
+    //public AudioSource clickAudio;
 	
 	// Update is called once per frame
 	public void Update () {
@@ -12,10 +14,17 @@ public class Hands : MonoBehaviour {
   
 	}
 
+    public void Start()
+    {
+        //clickAudio = GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.gameObject.CompareTag("Bubble"))
             return;
+
+        //clickAudio.Play();
 
         //for making the bubble disapper
         //collision.gameObject.SetActive(false);

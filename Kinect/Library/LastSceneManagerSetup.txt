@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Adrian/RainAgain.unity
+- path: Assets/Scenes/MainScenes/DefaultScreenTwo.unity
   isLoaded: 1
   isActive: 1
