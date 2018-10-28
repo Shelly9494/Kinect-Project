@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MainScenes/ParticleSystem.unity
+- path: Assets/Scenes/MainScenes/DefaultScreen.unity
   isLoaded: 1
   isActive: 1

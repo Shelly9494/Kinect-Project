@@ -65,12 +65,14 @@
     <Compile Include="Assets\02_Magnet_Tut\Scripts\GameController_CS.cs" />
     <Compile Include="Assets\02_Magnet_Tut\Scripts\MagnetActions_CS.cs" />
     <Compile Include="Assets\02_Magnet_Tut\Scripts\MagnetChangeDir_CS.cs" />
+    <Compile Include="Assets\animationController.cs" />
     <Compile Include="Assets\Scripts\BubbleController\Bubble.cs" />
     <Compile Include="Assets\Scripts\BubbleController\FloatLetter.cs" />
     <Compile Include="Assets\Scripts\BubbleController\Geometry.cs" />
     <Compile Include="Assets\Scripts\BubbleController\GeometrySpawner.cs" />
     <Compile Include="Assets\Scripts\BubbleController\PlaneController.cs" />
     <Compile Include="Assets\Scripts\BubbleController\Spawner.cs" />
+    <Compile Include="Assets\Scripts\ForParticleSystem\cannonBall.cs" />
     <Compile Include="Assets\Scripts\HandController\CameraAttracter.cs" />
     <Compile Include="Assets\Scripts\HandController\DistanceController.cs" />
     <Compile Include="Assets\Scripts\HandController\Hands.cs" />
