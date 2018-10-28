@@ -13,6 +13,10 @@ TagManager:
   - cube
   - Shape
   - Brush
+  - LineShape
+  - SolidShape
+  - StGradient
+  - StrokeShape
   layers:
   - Default
   - TransparentFX

@@ -29,7 +29,7 @@ public class Bubble : MonoBehaviour {
     {
         transform.position += mMovementDirection * Time.deltaTime * 0.5f;
 
-        transform.Rotate(Vector3.forward * Time.deltaTime * mMovementDirection.x * 20, Space.Self);
+        transform.Rotate(0, 0, Time.deltaTime * 20, Space.World);
     }
 
 
@@ -37,7 +37,7 @@ public class Bubble : MonoBehaviour {
     {
         while (gameObject.activeSelf)
         {
-            mMovementDirection = new Vector2(Random.Range(-100, 100) * 0.01f, Random.Range(0, 100) * 0.01f);
+            mMovementDirection = new Vector2(Random.Range(0, 100) * 0.01f, Random.Range(0, 100) * 0.01f);
             yield return new WaitForSeconds(5.0f);
         }
        
