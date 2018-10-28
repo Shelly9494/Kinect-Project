@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4802299915168434}
-  - component: {fileID: 33338041643106348}
   - component: {fileID: 23985695422980008}
   - component: {fileID: 58881997189995512}
   - component: {fileID: 50492402627135058}
@@ -59,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: fa1d1e894c3e6704f8fa09fa8a79d233, type: 2}
+  - {fileID: 2100000, guid: 91132c494a8e9d74aa2a9246a2912a99, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,13 +78,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33338041643106348
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1539862744779906}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!50 &50492402627135058
 Rigidbody2D:
   serializedVersion: 4

@@ -94,6 +94,7 @@
     <Compile Include="Assets\Scripts\KinectController\BodySourceView.cs" />
     <Compile Include="Assets\Scripts\KinectController\BodySourceView1.cs" />
     <Compile Include="Assets\Scripts\KinectController\BodySourceView2.cs" />
+    <Compile Include="Assets\Scripts\KinectController\BodySourceView3.cs" />
     <Compile Include="Assets\Scripts\KinectController\ColorSourceManager.cs" />
     <Compile Include="Assets\Scripts\KinectController\ColorSourceView.cs" />
     <Compile Include="Assets\Scripts\KinectController\DepthSourceManager.cs" />

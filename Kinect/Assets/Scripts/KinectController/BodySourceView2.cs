@@ -23,10 +23,7 @@ public class BodySourceView2 : MonoBehaviour {
         JointType.HandRight,
     };
 
-    private void Start()
-    {
-        
-    }
+   
     // Update is called once per frame
     void Update () {
         #region Get Kinect data
@@ -131,7 +128,7 @@ public class BodySourceView2 : MonoBehaviour {
 
             Instantiate(brush, jointObject.position, Quaternion.identity);
 
-            Invoke("StorePath", 5);
+            Invoke("StorePath", 1);
         }
 
         
@@ -153,7 +150,7 @@ public class BodySourceView2 : MonoBehaviour {
                 item.AddComponent<FloatLetter>();
             }
 
-            Destroy(item, 10);
+            Destroy(item, 1);
         }
 
 

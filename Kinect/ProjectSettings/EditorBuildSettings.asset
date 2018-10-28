@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/MainScenes/LineGame.unity
+    guid: c1dc68bbfd3dc7846bd712bf3c817464
+  - enabled: 0
+    path: Assets/Scenes/MainScenes/OrigamiScene.unity
+    guid: dfa307ac47838a4469992389052de2dc
+  - enabled: 0
+    path: Assets/Scenes/MainScenes/DefaultScreen.unity
+    guid: 0b5dc6232f5fc3f4e8141393a94bc9bc
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/MainScenes/ARScene.unity
+    guid: 90da84669a653d649a98516c657cada9
+  - enabled: 0
+    path: Assets/Scenes/MainScenes/LineScene.unity
+    guid: d0ea1e81d932a024b9a3bb57f22c0619
   m_configObjects: {}
