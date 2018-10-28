@@ -65,15 +65,13 @@
     <Compile Include="Assets\02_Magnet_Tut\Scripts\GameController_CS.cs" />
     <Compile Include="Assets\02_Magnet_Tut\Scripts\MagnetActions_CS.cs" />
     <Compile Include="Assets\02_Magnet_Tut\Scripts\MagnetChangeDir_CS.cs" />
-    <Compile Include="Assets\RainMaker\Demo\DemoScript.cs" />
-    <Compile Include="Assets\RainMaker\Demo\DemoScript2D.cs" />
-    <Compile Include="Assets\RainMaker\Demo\DemoScriptStartRainOnSpaceBar.cs" />
     <Compile Include="Assets\RainMaker\Prefab\BaseRainScript.cs" />
     <Compile Include="Assets\RainMaker\Prefab\RainCollision.cs" />
     <Compile Include="Assets\RainMaker\Prefab\RainScript.cs" />
     <Compile Include="Assets\RainMaker\Prefab\RainScript2D.cs" />
     <Compile Include="Assets\Scripts\BubbleController\Bubble.cs" />
     <Compile Include="Assets\Scripts\BubbleController\Floating.cs" />
+    <Compile Include="Assets\Scripts\BubbleController\floatingRotation.cs" />
     <Compile Include="Assets\Scripts\BubbleController\FloatLetter.cs" />
     <Compile Include="Assets\Scripts\BubbleController\Geometry.cs" />
     <Compile Include="Assets\Scripts\BubbleController\GeometrySpawner.cs" />
@@ -310,9 +308,12 @@
     <Reference Include="Unity.Locator">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
+=======
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
+>>>>>>> 840fb3f020a90bd39db09fbc4b663198b4ed0a4e
     <Reference Include="UnityEngine.Timeline">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
     </Reference>

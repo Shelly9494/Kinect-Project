@@ -5,15 +5,21 @@ using UnityEngine;
 public class SwitchObjects : MonoBehaviour {
 
     public GameObject[] findShapes;
+    public AudioSource clickAudio;
 
     private int currentShape;
 
     // Use this for initialization
 	void Start () {
 
+<<<<<<< HEAD
+        clickAudio = GetComponent<AudioSource>();
+        currentShape = Random.Range(0, findShapes.Length - 1);
+=======
        
         currentShape = Random.Range(0, findShapes.Length);
         
+>>>>>>> 840fb3f020a90bd39db09fbc4b663198b4ed0a4e
         findShapes[currentShape].SetActive(true);
 	}
 	
@@ -22,6 +28,7 @@ public class SwitchObjects : MonoBehaviour {
         Debug.Log("Trigger");
         if(collider.tag == "Hand")
         {
+            clickAudio.Play();
             if (currentShape < findShapes.Length - 1)
             {
                 currentShape++;
