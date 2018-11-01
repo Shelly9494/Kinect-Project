@@ -61,61 +61,54 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\02_Magnet_Tut\Scripts\CoinActions_CS.cs" />
-    <Compile Include="Assets\02_Magnet_Tut\Scripts\GameController_CS.cs" />
-    <Compile Include="Assets\02_Magnet_Tut\Scripts\MagnetActions_CS.cs" />
-    <Compile Include="Assets\02_Magnet_Tut\Scripts\MagnetChangeDir_CS.cs" />
-    <Compile Include="Assets\RainMaker\Prefab\BaseRainScript.cs" />
-    <Compile Include="Assets\RainMaker\Prefab\RainCollision.cs" />
-    <Compile Include="Assets\RainMaker\Prefab\RainScript.cs" />
-    <Compile Include="Assets\RainMaker\Prefab\RainScript2D.cs" />
-    <Compile Include="Assets\Scripts\BubbleController\Bubble.cs" />
-    <Compile Include="Assets\Scripts\BubbleController\Floating.cs" />
-    <Compile Include="Assets\Scripts\BubbleController\floatingRotation.cs" />
-    <Compile Include="Assets\Scripts\BubbleController\FloatLetter.cs" />
-    <Compile Include="Assets\Scripts\BubbleController\Geometry.cs" />
-    <Compile Include="Assets\Scripts\BubbleController\GeometrySpawner.cs" />
-    <Compile Include="Assets\Scripts\BubbleController\Origami.cs" />
-    <Compile Include="Assets\Scripts\BubbleController\OrigamiSpawner.cs" />
-    <Compile Include="Assets\Scripts\BubbleController\PlaneController.cs" />
-    <Compile Include="Assets\Scripts\BubbleController\Rotating.cs" />
-    <Compile Include="Assets\Scripts\BubbleController\Spawner.cs" />
-    <Compile Include="Assets\Scripts\BubbleController\SwitchObjects.cs" />
-    <Compile Include="Assets\Scripts\ForDefaultScreen\animationController.cs" />
-    <Compile Include="Assets\Scripts\ForDefaultScreen\animationControllerThree.cs" />
-    <Compile Include="Assets\Scripts\ForDefaultScreen\animationControllerTwo.cs" />
-    <Compile Include="Assets\Scripts\ForParticleSystem\cannonBall.cs" />
-    <Compile Include="Assets\Scripts\HandController\CameraAttracter.cs" />
-    <Compile Include="Assets\Scripts\HandController\DistanceController.cs" />
-    <Compile Include="Assets\Scripts\HandController\Hands.cs" />
-    <Compile Include="Assets\Scripts\KinectController\BodySourceManager.cs" />
-    <Compile Include="Assets\Scripts\KinectController\BodySourceView.cs" />
-    <Compile Include="Assets\Scripts\KinectController\BodySourceView1.cs" />
-    <Compile Include="Assets\Scripts\KinectController\BodySourceView2.cs" />
-    <Compile Include="Assets\Scripts\KinectController\BodySourceView3.cs" />
-    <Compile Include="Assets\Scripts\KinectController\ColorSourceManager.cs" />
-    <Compile Include="Assets\Scripts\KinectController\ColorSourceView.cs" />
-    <Compile Include="Assets\Scripts\KinectController\DepthSourceManager.cs" />
-    <Compile Include="Assets\Scripts\KinectController\DepthSourceView.cs" />
-    <Compile Include="Assets\Scripts\KinectController\DisableOnStart.cs" />
-    <Compile Include="Assets\Scripts\KinectController\InfraredSourceManager.cs" />
-    <Compile Include="Assets\Scripts\KinectController\InfraredSourceView.cs" />
-    <Compile Include="Assets\Scripts\KinectController\MultiSourceManager.cs" />
-    <Compile Include="Assets\Scripts\LineController\CreateLines.cs" />
-    <Compile Include="Assets\Scripts\LineController\DrawLines.cs" />
-    <Compile Include="Assets\Scripts\LineController\GeneralDisappear.cs" />
-    <Compile Include="Assets\Scripts\LineController\LineGame.cs" />
-    <Compile Include="Assets\Scripts\LineController\MoveLines.cs" />
-    <Compile Include="Assets\Scripts\Magnet\Coin.cs" />
-    <Compile Include="Assets\Scripts\Magnet\CoinModified.cs" />
-    <Compile Include="Assets\Scripts\Magnet\GameController.cs" />
-    <Compile Include="Assets\Scripts\Magnet\Levitate.cs" />
-    <Compile Include="Assets\Scripts\Magnet\MagnetAction.cs" />
-    <Compile Include="Assets\Scripts\Magnet\MagnetChangeDirection.cs" />
+    <Compile Include="Assets\AssetsStore\RainMaker\Prefab\BaseRainScript.cs" />
+    <Compile Include="Assets\AssetsStore\RainMaker\Prefab\RainCollision.cs" />
+    <Compile Include="Assets\AssetsStore\RainMaker\Prefab\RainScript.cs" />
+    <Compile Include="Assets\AssetsStore\RainMaker\Prefab\RainScript2D.cs" />
+    <Compile Include="Assets\CraneScene\Scripts\Origami.cs" />
+    <Compile Include="Assets\CraneScene\Scripts\OrigamiSpawner.cs" />
+    <Compile Include="Assets\DefaultScene_One\Script\animationController.cs" />
+    <Compile Include="Assets\DefaultScene_Two\Script\Floating.cs" />
+    <Compile Include="Assets\Geometry\Scripts\Geometry.cs" />
+    <Compile Include="Assets\Geometry\Scripts\GeometrySpawner.cs" />
+    <Compile Include="Assets\Geometry\Scripts\PlaneController.cs" />
+    <Compile Include="Assets\LineScene\Scripts\CreateLines.cs" />
+    <Compile Include="Assets\LineScene\Scripts\DrawLines.cs" />
+    <Compile Include="Assets\LineScene\Scripts\GeneralDisappear.cs" />
+    <Compile Include="Assets\LineScene\Scripts\LineGame.cs" />
+    <Compile Include="Assets\LineScene\Scripts\MoveLines.cs" />
+    <Compile Include="Assets\MagnetScene\Scripts\Coin.cs" />
+    <Compile Include="Assets\MagnetScene\Scripts\CoinModified.cs" />
+    <Compile Include="Assets\MagnetScene\Scripts\GameController.cs" />
+    <Compile Include="Assets\MagnetScene\Scripts\Levitate.cs" />
+    <Compile Include="Assets\MagnetScene\Scripts\MagnetAction.cs" />
+    <Compile Include="Assets\MagnetScene\Scripts\MagnetChangeDirection.cs" />
+    <Compile Include="Assets\ParticleSystem\Scripts\cannonBall.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\Bubble.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\Hands.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\Spawner.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\UnusedScript\floatingRotation.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\UnusedScript\FloatLetter.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\BodySourceManager.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\BodySourceView.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\BodySourceView1.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\BodySourceView2.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\BodySourceView3.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\ColorSourceManager.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\ColorSourceView.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\DepthSourceManager.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\DepthSourceView.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\DisableOnStart.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\InfraredSourceManager.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\InfraredSourceView.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\MultiSourceManager.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\MadaLetterScene(MultimediaStudentProvided)\CameraAttracter.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\MadaLetterScene(MultimediaStudentProvided)\DistanceController.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\ShapesChangesScene\SwitchObjects.cs" />
     <None Include="Assets\UnderWaterTest\WaterShaderTwo.shader" />
     <None Include="Assets\UnderWaterTest\WaterShader.shader" />
-    <None Include="Assets\RainMaker\Prefab\RainShader.shader" />
-    <None Include="Assets\RainMaker\Readme.txt" />
+    <None Include="Assets\AssetsStore\RainMaker\Prefab\RainShader.shader" />
+    <None Include="Assets\AssetsStore\RainMaker\Readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/aidzu/Documents/GitHub/Kinect-Project/Kinect/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -308,12 +301,6 @@
     <Reference Include="Unity.Locator">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
-=======
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
->>>>>>> 840fb3f020a90bd39db09fbc4b663198b4ed0a4e
     <Reference Include="UnityEngine.Timeline">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
     </Reference>
