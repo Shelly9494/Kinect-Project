@@ -29,7 +29,7 @@ public class Bubble : MonoBehaviour {
     {
         transform.position += mMovementDirection * Time.deltaTime * 0.5f;
 
-        transform.Rotate(0, 0, Time.deltaTime * 20, Space.World);
+        transform.Rotate(0, 0, Time.deltaTime * 50, Space.World);
     }
 
 

@@ -96,7 +96,7 @@ public class BodySourceView3 : MonoBehaviour {
 
             Transform jointObject = bodyObject.transform.Find(_joint.ToString());
             jointObject.position = targetPosition;
-            Debug.Log(targetPosition);
+            //Debug.Log(targetPosition);
         }
 
         
@@ -104,6 +104,6 @@ public class BodySourceView3 : MonoBehaviour {
 
     private Vector3 GetVector3FromJoint(Joint joint)
     {
-        return new Vector3(joint.Position.X * 60, joint.Position.Y * 60, joint.Position.Z * 60);
+        return new Vector3(joint.Position.X * 10, joint.Position.Y * 10, joint.Position.Z * 10);
     }
 }

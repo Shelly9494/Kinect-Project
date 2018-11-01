@@ -359,7 +359,7 @@ Transform:
   m_GameObject: {fileID: 1122459641300082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4866056564249776}
   - {fileID: 4730602407036918}
@@ -853,7 +853,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1122459641300082}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -1044,7 +1044,6 @@ MonoBehaviour:
   - {fileID: 1623594948832464}
   - {fileID: 1558036391786602}
   - {fileID: 1351299822605616}
-  clickAudio: {fileID: 0}
 --- !u!114 &114422589240702920
 MonoBehaviour:
   m_ObjectHideFlags: 1

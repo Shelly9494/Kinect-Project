@@ -21,8 +21,7 @@ GameObject:
   - component: {fileID: 4355042908132898}
   - component: {fileID: 212116232360247254}
   - component: {fileID: 50785884661020158}
-  - component: {fileID: 58511803556374872}
-  - component: {fileID: 114715467394842924}
+  - component: {fileID: 58095062568302384}
   m_Layer: 0
   m_Name: Handy
   m_TagString: Hand
@@ -38,7 +37,7 @@ Transform:
   m_GameObject: {fileID: 1445264086799076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -63,7 +62,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58511803556374872
+--- !u!58 &58095062568302384
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,18 +77,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 4.945
---- !u!114 &114715467394842924
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1445264086799076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 081a6b392e7bd7c48b6a0b25a649cac4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mHandMesh: {fileID: 4355042908132898}
 --- !u!212 &212116232360247254
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/TEMPLATE/Scn_RTBG_Template.unity
+- path: Assets/Scenes/MainScenes/Scn_RTBG_MADA.unity
   isLoaded: 1
   isActive: 1

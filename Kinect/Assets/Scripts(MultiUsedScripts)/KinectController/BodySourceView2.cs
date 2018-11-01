@@ -120,7 +120,7 @@ public class BodySourceView2 : MonoBehaviour {
 
     private Vector3 GetVector3FromJoint(Joint joint)
     {
-        return new Vector3(joint.Position.X * 40, joint.Position.Y * 40, joint.Position.Z * 40);
+        return new Vector3(joint.Position.X * 10, joint.Position.Y * 10, joint.Position.Z * 10);
     }
 
     void StorePath()

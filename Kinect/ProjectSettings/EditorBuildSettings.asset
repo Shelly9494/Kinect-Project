@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/90da84669a653d649a98516c657cada9
+    guid: 90da84669a653d649a98516c657cada9
+  - enabled: 0
+    path: Assets/Scenes/MainScenes/Scn_RTBG_Brush1.unity
+    guid: e5f7f7217b6e8824fa7a61d8feb5f655
+  - enabled: 1
+    path: Assets/Scenes/MainScenes/Scn_RTBG_MADA.unity
+    guid: 2223c44b8e366a84b8c3df0148f509b6
+  - enabled: 1
+    path: Assets/Scenes/MainScenes/Scn_RTBG_2DBubble.unity
+    guid: 9902100d872feb546bbe5edcd8106c87
+  - enabled: 1
+    path: Assets/Scenes/MainScenes/Scn_RTBG_Brush.unity
+    guid: a5a387ca2646f99479231d6287a2e411
   m_configObjects: {}

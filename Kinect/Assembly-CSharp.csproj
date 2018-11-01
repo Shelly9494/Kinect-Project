@@ -65,6 +65,7 @@
     <Compile Include="Assets\AssetsStore\RainMaker\Prefab\RainCollision.cs" />
     <Compile Include="Assets\AssetsStore\RainMaker\Prefab\RainScript.cs" />
     <Compile Include="Assets\AssetsStore\RainMaker\Prefab\RainScript2D.cs" />
+    <Compile Include="Assets\ChangeScene.cs" />
     <Compile Include="Assets\CraneScene\Scripts\Origami.cs" />
     <Compile Include="Assets\CraneScene\Scripts\OrigamiSpawner.cs" />
     <Compile Include="Assets\DefaultScene_One\Script\animationController.cs" />
@@ -83,10 +84,13 @@
     <Compile Include="Assets\MagnetScene\Scripts\Levitate.cs" />
     <Compile Include="Assets\MagnetScene\Scripts\MagnetAction.cs" />
     <Compile Include="Assets\MagnetScene\Scripts\MagnetChangeDirection.cs" />
+    <Compile Include="Assets\ParticleSystem\AdrianParticles\Scripts\Follow.cs" />
     <Compile Include="Assets\ParticleSystem\Scripts\cannonBall.cs" />
+    <Compile Include="Assets\SBR_ShapeChanges\Scripts\SceneManagerScript.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\Bubble.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\Hands.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\Spawner.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\SpawnerTwo.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\UnusedScript\floatingRotation.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\UnusedScript\FloatLetter.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\BodySourceManager.cs" />

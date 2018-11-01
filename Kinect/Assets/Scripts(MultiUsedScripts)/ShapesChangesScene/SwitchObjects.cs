@@ -1,23 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SwitchObjects : MonoBehaviour {
 
     public GameObject[] findShapes;
-    public AudioSource clickAudio;
+    //public AudioSource clickAudio;
 
     private int currentShape;
+    private int count;
+
+    //SceneManagerScript sceneManager;
 
     // Use this for initialization
 	void Start () {
 
 
-        clickAudio = GetComponent<AudioSource>();
-        currentShape = Random.Range(0, findShapes.Length - 1);
+        //clickAudio = GetComponent<AudioSource>();
 
-       
         currentShape = Random.Range(0, findShapes.Length);
+        count = 0;
         
 
         findShapes[currentShape].SetActive(true);
@@ -32,7 +35,7 @@ public class SwitchObjects : MonoBehaviour {
             if (currentShape < findShapes.Length - 1)
             {
                 currentShape++;
-                Debug.Log(findShapes.Length);
+                //Debug.Log(findShapes.Length);
 
                 foreach (GameObject item in findShapes)
                 {
@@ -42,10 +45,12 @@ public class SwitchObjects : MonoBehaviour {
                     }
                     
                 }
-                Debug.Log(currentShape);
+                //Debug.Log(currentShape);
                 if(findShapes[currentShape] != null)
                 {
                     findShapes[currentShape].SetActive(true);
+                    //findShapes[currentShape].transform.localScale = new Vector3(Random.Range(0, 100) * 0.1f, Random.Range(0,100) * 0.1f,0);
+               
                 }
             }
             else
@@ -59,13 +64,20 @@ public class SwitchObjects : MonoBehaviour {
                     }
                     
                 }
-                if(findShapes[currentShape] != null)
+                if (findShapes[currentShape] != null)
                 {
                     findShapes[currentShape].SetActive(true);
                 }
-               
             }
-            clickAudio.Play();
+            //clickAudio.Play();
+
+            count++;
+            Debug.Log(count);
+
+        if (count > 30)
+            {
+                SceneManager.LoadScene("Scn_RTBG_Brush", LoadSceneMode.Single);
+            }
         }
         
     }
