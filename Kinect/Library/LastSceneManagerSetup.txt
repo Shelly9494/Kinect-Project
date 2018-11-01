@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/TEMPLATE/Scn_SBG_Template.unity
+- path: Assets/Scenes/TEMPLATE/Scn_RTBG_Template.unity
   isLoaded: 1
   isActive: 1
