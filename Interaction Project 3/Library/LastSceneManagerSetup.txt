@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/MainScenes/Scn_RTBG_Brush.unity
+  isLoaded: 1
+  isActive: 1
