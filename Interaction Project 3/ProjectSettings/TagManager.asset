@@ -8,6 +8,7 @@ TagManager:
   - Hand
   - Position
   - WordCube
+  - MadaPosition
   layers:
   - Default
   - TransparentFX
