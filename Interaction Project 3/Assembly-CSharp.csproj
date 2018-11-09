@@ -61,10 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AssetsStore\RainMaker\Prefab\BaseRainScript.cs" />
-    <Compile Include="Assets\AssetsStore\RainMaker\Prefab\RainCollision.cs" />
-    <Compile Include="Assets\AssetsStore\RainMaker\Prefab\RainScript.cs" />
-    <Compile Include="Assets\AssetsStore\RainMaker\Prefab\RainScript2D.cs" />
+    <Compile Include="Assets\AssetStore\RainMaker\Prefab\BaseRainScript.cs" />
+    <Compile Include="Assets\AssetStore\RainMaker\Prefab\RainCollision.cs" />
+    <Compile Include="Assets\AssetStore\RainMaker\Prefab\RainScript.cs" />
+    <Compile Include="Assets\AssetStore\RainMaker\Prefab\RainScript2D.cs" />
     <Compile Include="Assets\ChangeScene.cs" />
     <Compile Include="Assets\CraneScene\Scripts\Origami.cs" />
     <Compile Include="Assets\CraneScene\Scripts\OrigamiSpawner.cs" />
@@ -76,6 +76,9 @@
     <Compile Include="Assets\LineScene\Scripts\CreateLines.cs" />
     <Compile Include="Assets\LineScene\Scripts\DrawLines.cs" />
     <Compile Include="Assets\LineScene\Scripts\GeneralDisappear.cs" />
+    <Compile Include="Assets\LineScene\Scripts\GeneralDisappearOne.cs" />
+    <Compile Include="Assets\LineScene\Scripts\GeneralShow.cs" />
+    <Compile Include="Assets\LineScene\Scripts\GeneralShowOne.cs" />
     <Compile Include="Assets\LineScene\Scripts\LineGame.cs" />
     <Compile Include="Assets\LineScene\Scripts\MoveLines.cs" />
     <Compile Include="Assets\MagnetScene\Scripts\Coin.cs" />
@@ -87,17 +90,23 @@
     <Compile Include="Assets\ParticleSystem\AdrianParticles\Scripts\Follow.cs" />
     <Compile Include="Assets\ParticleSystem\Scripts\cannonBall.cs" />
     <Compile Include="Assets\SBR_ShapeChanges\Scripts\SceneManagerScript.cs" />
+    <Compile Include="Assets\Scenes\Adrian\IconicDesigns\Scripts\ObjectRotator.cs" />
+    <Compile Include="Assets\Scenes\Adrian\IconicDesigns\Scripts\RotationTrigger.cs" />
+    <Compile Include="Assets\Scenes\Adrian\IconicDesigns\Scripts\UIFader.cs" />
+    <Compile Include="Assets\Scenes\Adrian\ShapeSceneMod\Scripts\ParticleTrigger.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\Bubble.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\Hands.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\Spawner.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\SpawnerTwo.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\UnusedScript\floatingRotation.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\UnusedScript\FloatLetter.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\FollowMouse.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\BodySourceManager.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\BodySourceView.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\BodySourceView1.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\BodySourceView2.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\BodySourceView3.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\BodySourceView4.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\ColorSourceManager.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\ColorSourceView.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\KinectController\DepthSourceManager.cs" />
@@ -109,10 +118,16 @@
     <Compile Include="Assets\Scripts(MultiUsedScripts)\MadaLetterScene(MultimediaStudentProvided)\CameraAttracter.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\MadaLetterScene(MultimediaStudentProvided)\DistanceController.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\ShapesChangesScene\SwitchObjects.cs" />
+    <Compile Include="Assets\Scripts(MultiUsedScripts)\ShapesChangesScene\SwitchObjectsAndExplode.cs" />
+    <None Include="Assets\StreamingAssets\Vuforia\DesignPrinciples.xml" />
     <None Include="Assets\UnderWaterTest\WaterShaderTwo.shader" />
     <None Include="Assets\UnderWaterTest\WaterShader.shader" />
-    <None Include="Assets\AssetsStore\RainMaker\Prefab\RainShader.shader" />
-    <None Include="Assets\AssetsStore\RainMaker\Readme.txt" />
+    <None Include="Assets\AssetStore\RainMaker\Prefab\RainShader.shader" />
+    <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
+    <None Include="Assets\AssetStore\RainMaker\Readme.txt" />
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>C:/Users/aidzu/Documents/Unity/Interaction Project 3/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/aidzu/Documents/Unity/Interaction Project 3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

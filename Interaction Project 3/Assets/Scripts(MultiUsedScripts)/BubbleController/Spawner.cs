@@ -19,10 +19,13 @@ public class Spawner : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         bubbleWait = Random.Range(bubbleLeastWait, bubbleMostWait);
 
         shapeArrary = GameObject.FindGameObjectsWithTag("Shape");
+
+        Vector3 shapeArraryPos = transform.position;
 
         if(shapeArrary.Length > 40)
         {

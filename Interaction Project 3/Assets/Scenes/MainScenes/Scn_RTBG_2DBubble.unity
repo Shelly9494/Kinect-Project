@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mBodySourceManager: {fileID: 1698423885}
-  mJointObject: {fileID: 1445264086799076, guid: a83cfef4363c2a049a6ae7c42deb09c7,
+  mJointObject: {fileID: 1445264086799076, guid: d03385e83855fc24ba5f2305f3d886fa,
     type: 2}
 --- !u!1 &623751327
 GameObject:
@@ -488,7 +488,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 720551593}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.02, z: -0}
+  m_LocalPosition: {x: 0, y: 5.01, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -549,6 +549,10 @@ Prefab:
     - target: {fileID: 4348405070159908, guid: 79b56b26e74196b40849acf7a3fb46e8, type: 2}
       propertyPath: m_LocalScale.z
       value: 4.02707
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793019602051938, guid: 79b56b26e74196b40849acf7a3fb46e8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79b56b26e74196b40849acf7a3fb46e8, type: 2}
@@ -682,7 +686,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4931530134356324, guid: 5e505c9a06daf7d4dace266858e89a58, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.72
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4931530134356324, guid: 5e505c9a06daf7d4dace266858e89a58, type: 2}
       propertyPath: m_LocalPosition.y
@@ -715,6 +719,21 @@ Prefab:
     - target: {fileID: 1993899687184768, guid: 5e505c9a06daf7d4dace266858e89a58, type: 2}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 20716566166881518, guid: 5e505c9a06daf7d4dace266858e89a58,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20716566166881518, guid: 5e505c9a06daf7d4dace266858e89a58,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20716566166881518, guid: 5e505c9a06daf7d4dace266858e89a58,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e505c9a06daf7d4dace266858e89a58, type: 2}

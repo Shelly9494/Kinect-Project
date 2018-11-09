@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hand
+  - Shape
+  - LineShape
+  - StrokeShape
+  - StGradient
+  - SolidShape
+  - CraneShape
+  - Particle
+  - Explode
   layers:
   - Default
   - TransparentFX

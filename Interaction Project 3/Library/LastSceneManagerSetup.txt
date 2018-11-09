@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MainScenes/Scn_RTBG_Brush.unity
+- path: Assets/Scenes/Adrian/Origami/Scn_SBG_OrigamiWorking.unity
   isLoaded: 1
   isActive: 1

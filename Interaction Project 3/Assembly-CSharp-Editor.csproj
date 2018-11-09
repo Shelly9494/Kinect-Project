@@ -61,7 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AssetsStore\RainMaker\Editor\RainMakerEditor.cs" />
+    <Compile Include="Assets\AssetStore\RainMaker\Editor\RainMakerEditor.cs" />
+    <Compile Include="Assets\Editor\BuildScenes.cs" />
+    <None Include="Assets\Editor\Vuforia\CylinderTargetTextures\VuforiaMars_Images\authoringinfo.xml" />
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>C:/Users/aidzu/Documents/Unity/Interaction Project 3/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/aidzu/Documents/Unity/Interaction Project 3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

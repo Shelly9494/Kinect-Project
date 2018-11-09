@@ -70,6 +70,9 @@
     <Compile Include="Assets\Standard Assets\KinectSpecialCases.cs" />
     <Compile Include="Assets\Standard Assets\NativeObjectCache.cs" />
     <Compile Include="Assets\Standard Assets\NativeWrapper.cs" />
+    <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
+    <Compile Include="Assets\Standard Assets\Scripts\Utility Scripts\CombineChildren.cs" />
+    <Compile Include="Assets\Standard Assets\Scripts\Utility Scripts\MeshCombineUtility.cs" />
     <Compile Include="Assets\Standard Assets\SmartGCHandle.cs" />
     <Compile Include="Assets\Standard Assets\ThreadSafeDictionary.cs" />
     <Compile Include="Assets\Standard Assets\Windows\Data\PropertyChangedEventArgs.cs" />
@@ -146,6 +149,7 @@
     <Compile Include="Assets\Standard Assets\Windows\Kinect\TrackingConfidence.cs" />
     <Compile Include="Assets\Standard Assets\Windows\Kinect\TrackingState.cs" />
     <Compile Include="Assets\Standard Assets\Windows\Kinect\Vector4.cs" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/aidzu/Documents/Unity/Interaction Project 3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

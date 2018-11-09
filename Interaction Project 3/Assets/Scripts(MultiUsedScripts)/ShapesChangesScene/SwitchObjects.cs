@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SwitchObjects : MonoBehaviour {
+public class SwitchObjects : MonoBehaviour
+{
 
     public GameObject[] findShapes;
     //public AudioSource clickAudio;
@@ -53,6 +54,7 @@ public class SwitchObjects : MonoBehaviour {
                
                 }
             }
+
             else
             {
                 currentShape = 0;
@@ -74,11 +76,13 @@ public class SwitchObjects : MonoBehaviour {
             count++;
             Debug.Log(count);
 
-        if (count > 30)
+            if (count > 30)
             {
                 SceneManager.LoadScene("Scn_RTBG_Brush", LoadSceneMode.Single);
             }
+           
         }
         
-    }
+     }
 }
+
