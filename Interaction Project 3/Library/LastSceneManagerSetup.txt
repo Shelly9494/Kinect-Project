@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Adrian/Origami/Scn_SBG_OrigamiWorking.unity
-=======
 - path: Assets/Scenes/Shelly/SpellingGame.unity
->>>>>>> 260edb492c878fab61f9bb9502ba4e60595d413a
   isLoaded: 1
   isActive: 1

@@ -3,24 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-  - Hand
-  - Shape
-  - LineShape
-  - StrokeShape
-  - StGradient
-  - SolidShape
-  - CraneShape
-  - Particle
-  - Explode
-=======
-  - cube
-  - Hand
-  - Position
-  - WordCube
-  - MadaPosition
->>>>>>> 260edb492c878fab61f9bb9502ba4e60595d413a
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -30,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
+  - 
   - 
   - 
   - 
