@@ -4,6 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Hand
   - Shape
   - LineShape
@@ -13,6 +14,13 @@ TagManager:
   - CraneShape
   - Particle
   - Explode
+=======
+  - cube
+  - Hand
+  - Position
+  - WordCube
+  - MadaPosition
+>>>>>>> 260edb492c878fab61f9bb9502ba4e60595d413a
   layers:
   - Default
   - TransparentFX
