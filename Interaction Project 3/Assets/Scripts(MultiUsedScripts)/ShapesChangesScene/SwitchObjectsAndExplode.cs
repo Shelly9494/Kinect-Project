@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SwitchObjectsAndExplode : MonoBehaviour
 {
@@ -10,19 +9,15 @@ public class SwitchObjectsAndExplode : MonoBehaviour
     //public AudioSource clickAudio;
 
     private int currentShape;
-    private int count;
 
     //SceneManagerScript sceneManager;
 
     // Use this for initialization
-	void Start () {
-
-
+	void Start ()
+    {
         //clickAudio = GetComponent<AudioSource>();
 
-        currentShape = Random.Range(0, findShapes.Length - 1);
-        count = 0;
-        
+        currentShape = Random.Range(0, findShapes.Length - 2);
 
         findShapes[currentShape].SetActive(true);
 	}
@@ -32,11 +27,12 @@ public class SwitchObjectsAndExplode : MonoBehaviour
         Debug.Log("Trigger");
         if(collider.tag == "Hand")
         {
-            
+
+            Destroy(findShapes[currentShape].transform.parent.gameObject.GetComponent<Rigidbody2D>());
+
             if (currentShape < findShapes.Length - 2)
             {
                 currentShape++;
-                //Debug.Log(findShapes.Length);
 
                 foreach (GameObject item in findShapes)
                 {
@@ -57,14 +53,15 @@ public class SwitchObjectsAndExplode : MonoBehaviour
 
                         foreach(GameObject item in findShapes)
                         {
-                            if(item.tag == "Particle")
+                            Debug.Log(item.transform.parent.gameObject);
+                            if (item.tag == "Particle")
                             {
                                 item.SetActive(true);
-                                Destroy(item.transform.parent.gameObject.GetComponent<Rigidbody2D>());
-                                Destroy(item.transform.parent.gameObject, 2);
+                                Destroy(item.transform.parent.gameObject.GetComponent<BoxCollider2D>());
+                                Destroy(item.transform.parent.gameObject, 3.5f);
                             }
                         }
-                        }
+                    }
                         //findShapes[findShapes.Length - 1].SetActive(true);
                         
 
@@ -96,14 +93,6 @@ public class SwitchObjectsAndExplode : MonoBehaviour
                 }
             }
             //clickAudio.Play();
-
-            //count++;
-            Debug.Log(count);
-
-            //if (count > 30)
-            //{
-            //    SceneManager.LoadScene("Scn_RTBG_Brush", LoadSceneMode.Single);
-            //}
             
         }
         
