@@ -27,7 +27,7 @@ public class Spawner : MonoBehaviour {
 
         Vector3 shapeArraryPos = transform.position;
 
-        if(shapeArrary.Length > 40)
+        if(shapeArrary.Length > 30)
         {
             Destroy(shapeArrary[shapeArrary.Length - (shapeArrary.Length - 1)]);
         }

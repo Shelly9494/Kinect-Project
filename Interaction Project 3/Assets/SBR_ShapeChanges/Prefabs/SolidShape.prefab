@@ -39,9 +39,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4135988112385056}
   - component: {fileID: 114736956116990868}
-  - component: {fileID: 114198988078069338}
   - component: {fileID: 61584380904663470}
   - component: {fileID: 50412493045147766}
+  - component: {fileID: 114926006509224152}
   m_Layer: 0
   m_Name: SolidShape
   m_TagString: Shape
@@ -721,25 +721,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab93f4110bb17447818f9fd36987402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114198988078069338
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1089358308832444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb414175a9d91c64ea75d709caec01df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  findShapes:
-  - {fileID: 1146438457657630}
-  - {fileID: 1844870505896964}
-  - {fileID: 1838070497774818}
-  - {fileID: 1468905055612122}
-  - {fileID: 1605075716755170}
-  - {fileID: 1023281995201248}
-  - {fileID: 1761938099382948}
 --- !u!114 &114302616154914264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -795,6 +776,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab93f4110bb17447818f9fd36987402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114926006509224152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1089358308832444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2e12666b1715c4b996d9a7218a204f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  findShapes: []
 --- !u!114 &114976196961657052
 MonoBehaviour:
   m_ObjectHideFlags: 1

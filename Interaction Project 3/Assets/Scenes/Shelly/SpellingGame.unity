@@ -155,8 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mBodySourceManager: {fileID: 1698423885}
-  mJointObject: {fileID: 1725007482892618, guid: a470edce6f4ed5d4ab87cb196a2c9d71,
-    type: 2}
+  mJointObject: {fileID: 825452117}
 --- !u!1 &131355513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1892,7 +1891,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1793019602051938, guid: 79b56b26e74196b40849acf7a3fb46e8, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79b56b26e74196b40849acf7a3fb46e8, type: 2}
@@ -2070,7 +2069,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1887433561
 MonoBehaviour:
   m_ObjectHideFlags: 0

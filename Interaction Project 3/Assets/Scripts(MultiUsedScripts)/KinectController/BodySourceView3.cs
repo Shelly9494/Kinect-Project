@@ -92,7 +92,7 @@ public class BodySourceView3 : MonoBehaviour {
         {
             Joint sourceJoint = body.Joints[_joint];
             Vector3 targetPosition = GetVector3FromJoint(sourceJoint);
-            //targetPosition.z = 0;
+            targetPosition.z = 0;
 
             Transform jointObject = bodyObject.transform.Find(_joint.ToString());
             jointObject.position = targetPosition;
