@@ -46,87 +46,79 @@ public class FloatingTwo : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if((this.name == "ACube_One" || this.name == "ACube_Two") && randomNum == 0)
+        if(other.tag == "Hand")
         {
-           
-            if (GameObject.FindGameObjectWithTag("Position") == true)
-            GameObject.FindGameObjectWithTag("Position").SetActive(false);
-
-            int aWordNum = Random.Range(0, 2);
-
-            if(aWordNum == 0)
+            if ((this.name == "ACube_One" || this.name == "ACube_Two") && randomNum == 0)
             {
-                madaPosition.SetActive(true);
+
+                if (GameObject.FindGameObjectWithTag("Position") == true)
+                    GameObject.FindGameObjectWithTag("Position").SetActive(false);
+
+                int aWordNum = Random.Range(0, 2);
+
+                if (aWordNum == 0)
+                {
+                    madaPosition.SetActive(true);
+                }
+
+                if (aWordNum == 1)
+                {
+                    artPosition.SetActive(true);
+                }
             }
 
-            if (aWordNum == 1)
+            if (this.name == "DCube" && randomNum == 0)
+            {
+                if (GameObject.FindGameObjectWithTag("Position") == true)
+                    GameObject.FindGameObjectWithTag("Position").SetActive(false);
+
+                int dWordNum = Random.Range(0, 2);
+
+                if (dWordNum == 0)
+                {
+                    madaPosition.SetActive(true);
+                }
+
+                if (dWordNum == 1)
+                {
+                    designPosition.SetActive(true);
+                }
+            }
+
+            if ((this.name == "RCube" || this.name == "TCube") && randomNum == 0)
             {
                 artPosition.SetActive(true);
+
             }
-        }
 
-        if (this.name == "DCube" && randomNum == 0)
-        {
-            if (GameObject.FindGameObjectWithTag("Position") == true)
-                GameObject.FindGameObjectWithTag("Position").SetActive(false);
-
-            int dWordNum = Random.Range(0 , 2);
-
-            if(dWordNum == 0)
+            if ((this.name == "MCube" || this.name == "DCube") && randomNum == 0)
             {
                 madaPosition.SetActive(true);
+
             }
 
-            if(dWordNum == 1)
+            if ((this.name == "ECube" || this.name == "SCube" || this.name == "ICube" || this.name == "GCube" || this.name == "NCube") && randomNum == 0)
             {
                 designPosition.SetActive(true);
             }
+
+            if (GetComponent<FloatingTwo>() && madaPosition.activeInHierarchy == true)
+            {
+                Destroy(GetComponent<FloatingTwo>());
+                gameObject.AddComponent<FindMadaWordPosition>();
+            }
+
+            if (GetComponent<FloatingTwo>() && artPosition.activeInHierarchy == true)
+            {
+                Destroy(GetComponent<FloatingTwo>());
+                gameObject.AddComponent<FindArtWordPosition>();
+            }
+
+            if (GetComponent<FloatingTwo>() && designPosition.activeInHierarchy == true)
+            {
+                Destroy(GetComponent<FloatingTwo>());
+                gameObject.AddComponent<FindDesignWordPosition>();
+            }
         }
-
-        if ((this.name == "RCube" || this.name == "TCube") && randomNum == 0)
-        {
-            artPosition.SetActive(true);
-
-        }
-
-        if ((this.name == "MCube" || this.name == "DCube") && randomNum == 0)
-        {
-            madaPosition.SetActive(true);
-
-        }
-
-        if((this.name == "ECube" || this.name == "SCube" || this.name == "ICube" || this.name == "GCube" || this.name == "NCube") && randomNum == 0)
-        {
-            designPosition.SetActive(true);
-        }
-
-        if (GetComponent<FloatingTwo>() && madaPosition.activeInHierarchy == true)
-        {
-            Destroy(GetComponent<FloatingTwo>());
-            gameObject.AddComponent<FindMadaWordPosition>();
-        }
-
-        if (GetComponent<FloatingTwo>() && artPosition.activeInHierarchy == true)
-        {
-            Destroy(GetComponent<FloatingTwo>());
-            gameObject.AddComponent<FindArtWordPosition>();
-        }
-
-        if(GetComponent<FloatingTwo>() && designPosition.activeInHierarchy == true)
-        {
-            Destroy(GetComponent<FloatingTwo>());
-            gameObject.AddComponent<FindDesignWordPosition>();
-        }
-    }
-
-
-    void SetIfRandomTrue()
-    {
-        
-    }
-
-    void SetIfRandomFalse()
-    {
-       
     }
 }
