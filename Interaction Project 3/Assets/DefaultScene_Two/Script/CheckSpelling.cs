@@ -95,7 +95,7 @@ public class CheckSpelling : MonoBehaviour {
     {
         if(cubeNumbers == 4)
         {
-            SceneManager.LoadScene("Scn_RTBG_2DBubble", LoadSceneMode.Single);
+            SceneManager.LoadScene("Scn_RTBG_Icons", LoadSceneMode.Single);
         }
         else
         {
@@ -105,7 +105,7 @@ public class CheckSpelling : MonoBehaviour {
                 {
                     Destroy(item.gameObject.GetComponent<FindMadaWordPosition>());
                     item.gameObject.AddComponent<FloatingTwo>();
-                    SceneManager.LoadScene("SpellingGame", LoadSceneMode.Single);
+                    SceneManager.LoadScene("Scn_RTBG_SpellingGame", LoadSceneMode.Single);
                 }
             }
             
@@ -116,7 +116,7 @@ public class CheckSpelling : MonoBehaviour {
     {
         if(cubeNumbers == 3)
         {
-            SceneManager.LoadScene("Scn_RTBG_2DBubble", LoadSceneMode.Single);
+            SceneManager.LoadScene("Scn_RTBG_Icons", LoadSceneMode.Single);
         }
         else
         {
@@ -126,7 +126,7 @@ public class CheckSpelling : MonoBehaviour {
                 {
                     Destroy(item.gameObject.GetComponent<FindArtWordPosition>());
                     item.gameObject.AddComponent<FloatingTwo>();
-                    SceneManager.LoadScene("SpellingGame", LoadSceneMode.Single);
+                    SceneManager.LoadScene("Scn_RTBG_SpellingGame", LoadSceneMode.Single);
                 }
             }
         }
@@ -136,7 +136,7 @@ public class CheckSpelling : MonoBehaviour {
     {
         if(cubeNumbers == 6)
         {
-            SceneManager.LoadScene("Scn_RTBG_2DBubble", LoadSceneMode.Single);
+            SceneManager.LoadScene("Scn_RTBG_Icons", LoadSceneMode.Single);
         }
         else
         {
@@ -146,7 +146,7 @@ public class CheckSpelling : MonoBehaviour {
                 {
                     Destroy(item.gameObject.GetComponent<FindDesignWordPosition>());
                     item.gameObject.AddComponent<FloatingTwo>();
-                    SceneManager.LoadScene("SpellingGame", LoadSceneMode.Single);
+                    SceneManager.LoadScene("Scn_RTBG_SpellingGame", LoadSceneMode.Single);
                 }
             }
         }

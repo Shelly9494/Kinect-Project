@@ -6,14 +6,14 @@ public class SwitchObjectsAndExplode : MonoBehaviour
 {
 
     public GameObject[] findShapes;
-    //public AudioSource clickAudio;
 
     private int currentShape;
+    AudioSource source;
 
-    //SceneManagerScript sceneManager;
+    public AudioClip touchSound;
 
-    // Use this for initialization
-	void Start ()
+
+    void Start ()
     {
         //clickAudio = GetComponent<AudioSource>();
 
@@ -21,8 +21,13 @@ public class SwitchObjectsAndExplode : MonoBehaviour
 
         findShapes[currentShape].SetActive(true);
 	}
-	
-	void OnTriggerEnter2D(Collider2D collider)
+
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
     {
         //Debug.Log("Trigger");
         if(collider.tag == "Hand")
@@ -92,9 +97,10 @@ public class SwitchObjectsAndExplode : MonoBehaviour
                     findShapes[currentShape].SetActive(true);
                 }
             }
-            //clickAudio.Play();
-            
-            
+            float vol = Random.Range(0.5f, 1.5f);
+            source.PlayOneShot(touchSound, vol);
+
+
         }
         
      }
