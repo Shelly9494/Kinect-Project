@@ -18,6 +18,9 @@ public class FloatingTwo : MonoBehaviour {
     GameObject madaPosition;
     GameObject artPosition;
     GameObject designPosition;
+    AudioSource source;
+
+    public AudioClip touchSound;
 
 	// Use this for initialization
 	void Start () {
@@ -31,6 +34,11 @@ public class FloatingTwo : MonoBehaviour {
         madaPosition = mainPosition.transform.Find("MadaPosition").gameObject;
         artPosition = mainPosition.transform.Find("ArtPosition").gameObject;
         designPosition = mainPosition.transform.Find("DesignPosition").gameObject;
+    }
+
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -119,6 +127,9 @@ public class FloatingTwo : MonoBehaviour {
                 Destroy(GetComponent<FloatingTwo>());
                 gameObject.AddComponent<FindDesignWordPosition>();
             }
+
+            float vol = Random.Range(0.5f, 1.5f);
+            source.PlayOneShot(touchSound, vol);
         }
     }
 }
