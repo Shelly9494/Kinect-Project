@@ -472,8 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storeBubbles:
-  - {fileID: 1612832104505504, guid: 395d0a605e4395049a55e0c43d5012e9, type: 2}
-  - {fileID: 1089358308832444, guid: f124ee5ad2edb424c8d3b22009de52a1, type: 2}
+  - {fileID: 1089358308832444, guid: bb4900dfa31d5a54a856336db5a098b1, type: 2}
   - {fileID: 1122459641300082, guid: 12fd00e91d8e248409343cb7be61b63b, type: 2}
   - {fileID: 1161232742011988, guid: ad64aa79fd3f7ca439ae8939f3592634, type: 2}
   bubbleValue: {x: 8, y: 0, z: 0}
