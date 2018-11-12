@@ -158,7 +158,6 @@ MonoBehaviour:
   mJointObject:
   - {fileID: 1725007482892618, guid: e18092de6ef2e244eac0156482a17c7d, type: 2}
   - {fileID: 1974484923370422, guid: b39201e21938fa5469a56a821c100006, type: 2}
-  - {fileID: 1974137392184680, guid: 366a03cf9bb270e46a128fb86895c132, type: 2}
 --- !u!1 &623751327
 GameObject:
   m_ObjectHideFlags: 0

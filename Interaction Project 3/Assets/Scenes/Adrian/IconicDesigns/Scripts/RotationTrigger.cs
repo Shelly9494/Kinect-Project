@@ -8,7 +8,7 @@ public class RotationTrigger : MonoBehaviour
     
     void OnTriggerEnter (Collider col)
     {
-        if (col.gameObject.tag == "Hand")
+        if (col.tag == "Hand")
         {
             objRotate.StartRotation();
             //Debug.Log("Touch");
