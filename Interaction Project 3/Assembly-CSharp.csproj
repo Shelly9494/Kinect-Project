@@ -105,6 +105,7 @@
     <Compile Include="Assets\SBR_ShapeChanges\Scripts\SceneManagerScript.cs" />
     <Compile Include="Assets\Scenes\Adrian\IconicDesigns\Scripts\ObjectRotator.cs" />
     <Compile Include="Assets\Scenes\Adrian\IconicDesigns\Scripts\RotationTrigger.cs" />
+    <Compile Include="Assets\Scenes\Adrian\IconicDesigns\Scripts\SceneTrigger.cs" />
     <Compile Include="Assets\Scenes\Adrian\IconicDesigns\Scripts\UIFader.cs" />
     <Compile Include="Assets\Scenes\Adrian\ShapeSceneMod\Scripts\ParticleTrigger.cs" />
     <Compile Include="Assets\Scripts(MultiUsedScripts)\BubbleController\Bubble.cs" />

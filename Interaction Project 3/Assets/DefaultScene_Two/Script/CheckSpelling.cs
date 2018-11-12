@@ -74,7 +74,7 @@ public class CheckSpelling : MonoBehaviour {
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("Scn_RTBG_2DBubble", LoadSceneMode.Single);
+        SceneManager.LoadScene("Scn_RTBG_Icons", LoadSceneMode.Single);
     }
 
     IEnumerator WaitForDoubleCheck()

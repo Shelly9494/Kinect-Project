@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObjectRotator : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ObjectRotator : MonoBehaviour
     public GameObject imageCube;
     public GameObject Canvas1;
     public GameObject Canvas2;
+    public GameObject SwitchSceneCanvas;
 
     //Private variables
     private bool rotating;
@@ -24,6 +26,11 @@ public class ObjectRotator : MonoBehaviour
             StartCoroutine(RotateImageCube(new Vector3(0, 90, 0), 1));
         }
 
+        /*if ()
+        {
+            SwitchSceneCanvas.SetActive(true);
+        }
+        */
     }
 
     private IEnumerator RotateDescription(Vector3 angles, float duration)
@@ -95,5 +102,4 @@ public class ObjectRotator : MonoBehaviour
 
         //END OF IMAGECUBE ROTATION
     }
-
 }

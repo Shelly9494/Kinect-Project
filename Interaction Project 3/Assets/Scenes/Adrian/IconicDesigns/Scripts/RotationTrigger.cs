@@ -12,7 +12,6 @@ public class RotationTrigger : MonoBehaviour
         {
             objRotate.StartRotation();
             //Debug.Log("Touch");
-        }
-        
+        }       
     }
 }

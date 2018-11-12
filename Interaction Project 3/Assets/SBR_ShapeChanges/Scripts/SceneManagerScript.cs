@@ -19,6 +19,6 @@ public class SceneManagerScript : MonoBehaviour {
     public void SwitchScene()
     {
         Debug.Log("Switch Scene");
-        SceneManager.LoadScene("Scn_RTBG_Shapes", LoadSceneMode.Single);
+        SceneManager.LoadScene("Scn_RTBG_Icons", LoadSceneMode.Single);
     }
 }
