@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Shelly/SpellingGame.unity
+- path: Assets/Scenes/MainScenes/Scn_RTBG_BrushOriginal.unity
   isLoaded: 1
   isActive: 1
