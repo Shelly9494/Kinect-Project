@@ -9,7 +9,6 @@ public class BodySourceView3 : MonoBehaviour {
     public BodySourceManager mBodySourceManager;
     public GameObject mJointObject;
 
-
     private Dictionary<ulong, GameObject> mBodies = new Dictionary<ulong, GameObject>();
 
     private List<JointType> _joints = new List<JointType>
@@ -17,6 +16,7 @@ public class BodySourceView3 : MonoBehaviour {
         JointType.HandLeft,
         JointType.HandRight,
     };
+
     // Update is called once per frame
     void Update () {
         #region Get Kinect data
@@ -79,7 +79,6 @@ public class BodySourceView3 : MonoBehaviour {
         {
             GameObject newJoint = Instantiate(mJointObject);
             newJoint.name = joint.ToString();
-
             newJoint.transform.parent = body.transform;
         }
 

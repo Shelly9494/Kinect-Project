@@ -18,6 +18,8 @@ TagManager:
   - CraneShape
   - cube
   - Canvas
+  - Hand1
+  - Text
   layers:
   - Default
   - TransparentFX

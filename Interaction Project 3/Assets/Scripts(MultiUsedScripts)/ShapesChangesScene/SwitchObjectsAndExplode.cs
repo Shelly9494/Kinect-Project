@@ -24,7 +24,7 @@ public class SwitchObjectsAndExplode : MonoBehaviour
 	
 	void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Trigger");
+        //Debug.Log("Trigger");
         if(collider.tag == "Hand")
         {
 
@@ -53,7 +53,7 @@ public class SwitchObjectsAndExplode : MonoBehaviour
 
                         foreach(GameObject item in findShapes)
                         {
-                            Debug.Log(item.transform.parent.gameObject);
+                            //Debug.Log(item.transform.parent.gameObject);
                             if (item.tag == "Particle")
                             {
                                 item.SetActive(true);

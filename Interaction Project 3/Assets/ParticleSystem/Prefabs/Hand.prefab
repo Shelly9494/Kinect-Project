@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33440684619964572}
   - component: {fileID: 23239011932203282}
   - component: {fileID: 135164181727511436}
-  - component: {fileID: 114755951349944326}
+  - component: {fileID: 54946269826925766}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Hand
@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1110074686667258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.099999905, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -49,7 +49,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1110074686667258}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -85,18 +85,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1110074686667258}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114755951349944326
-MonoBehaviour:
+--- !u!54 &54946269826925766
+Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1110074686667258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 081a6b392e7bd7c48b6a0b25a649cac4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mHandMesh: {fileID: 4236143725865964}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!135 &135164181727511436
 SphereCollider:
   m_ObjectHideFlags: 1

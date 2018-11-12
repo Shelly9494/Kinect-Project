@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212116232360247254}
   - component: {fileID: 50785884661020158}
   - component: {fileID: 58511803556374872}
-  - component: {fileID: 114665643561762156}
+  - component: {fileID: 114417069242602102}
   m_Layer: 0
   m_Name: HandyThree
   m_TagString: Hand
@@ -78,7 +78,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.75
---- !u!114 &114665643561762156
+--- !u!114 &114417069242602102
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
