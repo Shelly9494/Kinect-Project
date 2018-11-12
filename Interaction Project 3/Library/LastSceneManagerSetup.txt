@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Adrian/IconicDesigns/Scn_RTBG_Working.unity
+- path: Assets/Scenes/Shelly/SpellingGameMod.unity
   isLoaded: 1
   isActive: 1

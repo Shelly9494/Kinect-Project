@@ -1,50 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class animationController : MonoBehaviour {
+public class AnimationController : MonoBehaviour {
 
-    public AnimationCurve curve;
-    public Vector3 distance;
-    public float speed;
-
-    public Vector3 startPos, toPos;
-    private float timeStart;
-
-    void randomToPos()
-    {
-        toPos = startPos;
-        toPos.x += 1 * distance.x;
-        toPos.y += 1 * distance.y;
-        toPos.z += -1 * distance.z;
-        timeStart = Time.time;
-    }
-
-    //Animator anim;
+    public Animator anim;
+    public GameObject hand;
+    public GameObject canvas;
 
 	// Use this for initialization
 	void Start () {
-
-        startPos = transform.position;
-        randomToPos();
-
         //anim = GetComponent<Animator>();
+        //hand = GameObject.FindGameObjectWithTag("Hand");
+        //Debug.Log(hand);
+        //canvas = GameObject.Find("GuideCanvas");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        float d = (Time.time - timeStart) / speed, m = curve.Evaluate(d);
-        if (d > 1)
+
+        if (hand.activeInHierarchy == true)
         {
-            randomToPos();
-        } else if (d < 0.5)
-        {
-            transform.position = Vector3.Lerp(startPos, toPos, m * 2.0f);
+            Debug.Log("true");
+            anim.SetBool("isUserInScene", true);
+            canvas.SetActive(true);
         }
-        else
-        {
-            transform.position = Vector3.Lerp(toPos, startPos, (m - 0.5f) * 2.0f);
-        }
-		
+
 	}
 }
