@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class IconAnimationController : MonoBehaviour {
+public class IconAnimationController : MonoBehaviour
+{
 
     public Animator anim;
     public GameObject canvas;
     bool addCollider;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         addCollider = false;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         if (addCollider == false && canvas != null)
         {
             canvas.SetActive(true);
@@ -26,9 +29,9 @@ public class IconAnimationController : MonoBehaviour {
     public void SetCanvasToF()
     {
         canvas.SetActive(false);
-        addCollider = true;    
+        addCollider = true;
 
-        Debug.Log("add collider");
+        //Debug.Log("add collider");
         
     }
 }

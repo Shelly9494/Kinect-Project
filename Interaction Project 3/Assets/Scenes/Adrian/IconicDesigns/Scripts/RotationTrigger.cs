@@ -32,7 +32,7 @@ public class RotationTrigger : MonoBehaviour
             if(count == 4)
             {
                 canvas.SetActive(true);
-                anim.SetBool("showLeaveBtn", true);
+                //anim.SetBool("showLeaveBtn", true);
                 btn.SetActive(true);
             }
 

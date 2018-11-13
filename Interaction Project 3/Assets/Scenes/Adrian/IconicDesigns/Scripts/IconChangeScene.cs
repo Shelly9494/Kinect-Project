@@ -13,12 +13,12 @@ public class IconChangeScene : MonoBehaviour {
         {
             currentScene = SceneManager.GetActiveScene();
             if (currentScene.name == "Scn_RTBG_Icons")
-                Invoke("ChangeToScene", 3);
+                Invoke("ChangeToScene", 1);
         }
     }
 
     void ChangeToScene()
     {
-        SceneManager.LoadScene("Scn_SBG_Shapes", LoadSceneMode.Single);
+        SceneManager.LoadScene("Scn_RTBG_Brush", LoadSceneMode.Single);
     }
 }

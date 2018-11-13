@@ -7,18 +7,17 @@ public class SceneManagerScript : MonoBehaviour {
 
     Scene currentScene;
     
-
     private void Start()
     {
         currentScene = SceneManager.GetActiveScene();
-        Debug.Log(currentScene.name);
+        //Debug.Log(currentScene.name);
     }
 
     public void SwitchScene()
     {
-        if(currentScene.name == "Scn_RTBG_BrushOriginal")
+        if(currentScene.name == "Scn_RTBG_Brush")
         {
-            Debug.Log("Switch Scene");
+            //Debug.Log("Switch Scene");
             SceneManager.LoadScene("Scn_RTBG_SpellingGame", LoadSceneMode.Single);
         }
     }

@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScenes/Scn_RTBG_SpellingGame.unity
     guid: 8e6913bde19cb974e884f727d21afed1
   - enabled: 1
-    path: Assets/Scenes/MainScenes/Scn_RTBG_Icons.unity
-    guid: 44230a55edb64544b93c8a69306e94e4
-  - enabled: 1
     path: Assets/Scenes/MainScenes/Scn_SBG_Shapes.unity
     guid: df3283f0205057946b626ee2fef6b372
+  - enabled: 1
+    path: Assets/Scenes/MainScenes/Scn_RTBG_Icons.unity
+    guid: 44230a55edb64544b93c8a69306e94e4
   - enabled: 1
     path: Assets/Scenes/MainScenes/Scn_RTBG_BrushOriginal.unity
     guid: a5a387ca2646f99479231d6287a2e411

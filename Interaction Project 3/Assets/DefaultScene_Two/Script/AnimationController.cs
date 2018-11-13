@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AnimationController : MonoBehaviour {
+public class AnimationController : MonoBehaviour
+{
 
     public Animator anim;
     public GameObject canvas;
@@ -11,7 +12,8 @@ public class AnimationController : MonoBehaviour {
     bool addCollider;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         addCollider = false;
 	}
 	

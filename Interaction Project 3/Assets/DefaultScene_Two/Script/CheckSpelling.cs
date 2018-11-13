@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CheckSpelling : MonoBehaviour {
+public class CheckSpelling : MonoBehaviour
+{
 
     int cubeNumbers;
     
@@ -13,13 +14,13 @@ public class CheckSpelling : MonoBehaviour {
     GameObject designPosition;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         mainPosition = GameObject.Find("Position");
 
         madaPosition = mainPosition.transform.Find("MadaPosition").gameObject;
         artPosition = mainPosition.transform.Find("ArtPosition").gameObject;
         designPosition = mainPosition.transform.Find("DesignPosition").gameObject;
-
 	}
 
     void Update()
@@ -74,7 +75,7 @@ public class CheckSpelling : MonoBehaviour {
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("Scn_RTBG_Icons", LoadSceneMode.Single);
+        SceneManager.LoadScene("Scn_SBG_Shapes", LoadSceneMode.Single);
     }
 
     IEnumerator WaitForDoubleCheck()
@@ -95,7 +96,7 @@ public class CheckSpelling : MonoBehaviour {
     {
         if(cubeNumbers == 4)
         {
-            SceneManager.LoadScene("Scn_RTBG_Icons", LoadSceneMode.Single);
+            SceneManager.LoadScene("Scn_SBG_Shapes", LoadSceneMode.Single);
         }
         else
         {
@@ -116,7 +117,7 @@ public class CheckSpelling : MonoBehaviour {
     {
         if(cubeNumbers == 3)
         {
-            SceneManager.LoadScene("Scn_RTBG_Icons", LoadSceneMode.Single);
+            SceneManager.LoadScene("Scn_SBG_Shapes", LoadSceneMode.Single);
         }
         else
         {
@@ -136,7 +137,7 @@ public class CheckSpelling : MonoBehaviour {
     {
         if(cubeNumbers == 6)
         {
-            SceneManager.LoadScene("Scn_RTBG_Icons", LoadSceneMode.Single);
+            SceneManager.LoadScene("Scn_SBG_Shapes", LoadSceneMode.Single);
         }
         else
         {

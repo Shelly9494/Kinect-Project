@@ -50,7 +50,7 @@ public class Counter : MonoBehaviour {
         if (count == 0)
         {
             Debug.Log("Change Scene");
-            SceneManager.LoadScene("Scn_RTBG_BrushOriginal", LoadSceneMode.Single);
+            SceneManager.LoadScene("Scn_RTBG_Icons", LoadSceneMode.Single);
         }
         
     }
