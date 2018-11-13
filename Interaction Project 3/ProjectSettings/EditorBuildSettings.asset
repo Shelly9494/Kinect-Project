@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScenes/Scn_RTBG_Icons.unity
     guid: 44230a55edb64544b93c8a69306e94e4
   - enabled: 1
-    path: Assets/Scenes/MainScenes/Scn_RTBG_BrushOriginal.unity
+    path: Assets/Scenes/MainScenes/Scn_RTBG_Brush.unity
     guid: a5a387ca2646f99479231d6287a2e411
   m_configObjects: {}

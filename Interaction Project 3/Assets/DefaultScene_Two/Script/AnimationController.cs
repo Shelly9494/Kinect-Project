@@ -8,7 +8,8 @@ public class AnimationController : MonoBehaviour
 
     public Animator anim;
     public GameObject canvas;
-    public GameObject hand;
+    GameObject[] hands;
+
     bool addCollider;
 
 	// Use this for initialization
@@ -16,26 +17,32 @@ public class AnimationController : MonoBehaviour
     {
         addCollider = false;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (hand.activeInHierarchy && addCollider == false)
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if(collider.tag == "PreHand")
         {
             canvas.SetActive(true);
             anim.SetBool("isUserInScene", true);
-            Destroy(hand.GetComponent<BoxCollider>());
-            Invoke("AddCollider", 10f);
-            addCollider = true;
+            
+            Invoke("AddCollider", 11f);
         }
-	}
+    }
 
     void AddCollider()
     {
-        if (hand.GetComponent<BoxCollider>() == false && addCollider == true)
+        if (GameObject.FindGameObjectWithTag("Hand") == null)
         {
-            hand.AddComponent<BoxCollider>();
-            
-            Debug.Log("add collider");
+            hands = GameObject.FindGameObjectsWithTag("PreHand");
+            foreach (GameObject item in hands)
+            {
+                if (item.tag == "PreHand" && item != null)
+                {
+                    item.tag = "Hand";
+
+                    Debug.Log("add collider");
+                }
+            }
         }
     }
 }

@@ -21,8 +21,9 @@ GameObject:
   - component: {fileID: 4089577404971444}
   - component: {fileID: 33936862960954694}
   - component: {fileID: 23918403164882130}
-  - component: {fileID: 54045116197519760}
-  - component: {fileID: 65630135803460286}
+  - component: {fileID: 50646058962147874}
+  - component: {fileID: 114300762497350324}
+  - component: {fileID: 58928050365865214}
   m_Layer: 0
   m_Name: Hand_WBlue
   m_TagString: Hand
@@ -38,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1677299807553814}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -85,30 +86,49 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1677299807553814}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54045116197519760
-Rigidbody:
+--- !u!50 &50646058962147874
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1677299807553814}
-  serializedVersion: 2
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
   m_Mass: 1
-  m_Drag: 0
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_Constraints: 0
+  m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!65 &65630135803460286
-BoxCollider:
+  m_Constraints: 0
+--- !u!58 &58928050365865214
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1677299807553814}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 10, y: 3.9891613, z: 10.000002}
-  m_Center: {x: 0, y: 0.008849948, z: -3.816557e-17}
+  m_Radius: 5
+--- !u!114 &114300762497350324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677299807553814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9cb7b35ecdd4a34cbcf15bf7d91da7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

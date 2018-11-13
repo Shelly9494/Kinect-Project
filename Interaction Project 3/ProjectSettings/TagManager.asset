@@ -20,6 +20,8 @@ TagManager:
   - Canvas
   - Hand1
   - Text
+  - PreHand
+  - TimerCanvas
   layers:
   - Default
   - TransparentFX
