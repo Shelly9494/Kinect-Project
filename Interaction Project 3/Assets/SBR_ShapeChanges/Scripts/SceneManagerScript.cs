@@ -14,41 +14,21 @@ public class SceneManagerScript : MonoBehaviour {
     {
         currentScene = SceneManager.GetActiveScene();
         //Debug.Log(currentScene.name);
-        count_down = 180;
+        count_down = 240 ;
+
+        Invoke("CheckBrushes", 0f);
     }
 
     public void SwitchScene()
     {
         if(currentScene.name == "Scn_RTBG_Brush")
         {
-            //Debug.Log("Switch Scene");
+            Debug.Log("Switch Scene");
             SceneManager.LoadScene("Scn_RTBG_SpellingGame", LoadSceneMode.Single);
         }
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Brush")
-            CancelInvoke();
-
-        if (createdCanvas.activeInHierarchy == true)
-        {
-            createdCanvas.SetActive(false);
-        }
-        Debug.Log("Enter");
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Brush")
-        {
-            Invoke("SwitchScene", count_down);
-            InvokeRepeating("CreateTimer", 0f, 1f);
-        }   
-            
-        Debug.Log("Leave");
-    }
-
+    
     void CreateTimer()
     {
 
@@ -61,9 +41,18 @@ public class SceneManagerScript : MonoBehaviour {
         {
             CancelInvoke();
         }
-        if (createdCanvas.activeInHierarchy == false && count_down < 10)
-        {
-            createdCanvas.SetActive(true);
-        }
+
+    }
+
+    public void CheckBrushes()
+    {
+            Invoke("SwitchScene", count_down);
+            InvokeRepeating("CreateTimer", 0f, 1f);
+            Debug.Log("Check Users");
+    }
+
+    public void CancelInvokeFun()
+    {
+
     }
 }

@@ -16,8 +16,8 @@ public class Counter : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        count = 100;
-        lastCount = 100;
+        count = 500;
+        lastCount = 500;
         counter.text = count.ToString();
         textSpawner = GameObject.Find("TextSpawner").transform;
         Instantiate(canvasPrefab, textSpawner.position, Quaternion.identity);

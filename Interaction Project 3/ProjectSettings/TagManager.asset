@@ -22,6 +22,9 @@ TagManager:
   - Text
   - PreHand
   - TimerCanvas
+  - PreBrush
+  - BrushChild
+  - DrawArea
   layers:
   - Default
   - TransparentFX
